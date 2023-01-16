@@ -1,0 +1,122 @@
+* {
+    font-family: "맑은 고딕";
+}
+header, footer {
+    text-align: center;
+    background-color: aqua;
+    padding: 20px;
+    color: white;
+}
+header {
+    height: 180px;
+}
+header div {
+    float: left;
+}
+header p {
+    font-size: 20px;
+    font-weight: bold;
+}
+nav {
+    background-color: aquamarine;
+    font-weight: bold;
+    text-align: left;
+    padding: 0px;
+    height: 70px;
+    clear: both;
+}
+a:link, a:visited {
+    color: black;
+}
+a:hover, a:active {
+    background-color: white;
+    color: green;
+}
+footer a:hover, footer a:active {
+    background-color: aqua;
+}
+footer a {
+    padding: 0px;
+    margin: 0px;
+    height: 10px;
+}
+a {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+.c1, .c2, .c3, .c4 {
+    padding: 10px;
+    border: solid 0px;
+    border-left-width: 20px;
+    font-size: 20px;
+    color: gray;
+}
+.c1 {
+    border-color: red;
+}
+.c2 {
+    border-color: pink;
+}
+.c3 {
+    border-color: skyblue;
+}
+.c4 {
+    border-color: green;
+}
+#p {
+    color: green;
+    margin: 20px 50px 0px 70px;
+}
+#img {
+    margin: 20px;
+    border-radius: 50px;
+
+}
+section {
+	width: 100%;
+    height: auto;
+    padding: 10px 0px 50px 0px;
+    /* margin-left: 5px; */
+    /* float: left; */
+    border-bottom: 1px dotted red;
+    box-sizing: border-box;
+}
+footer {
+    clear: both;
+}
+#s1 span {
+    height: 20px;
+}
+ol, ul {
+    margin-left: 50px;
+    line-height: 30px;
+}
+#s1 ol {
+    list-style-type: none;
+    margin-left: 20px;
+}
+table {
+    margin-left: 50px;
+    width: 70%;
+    border: solid 1px black;
+    border-collapse: collapse; /* 중복되는 표의 셀의 테두리를 한줄로 만든다.*/
+}
+td, th {
+    border: solid 1px green;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+thead {
+    font-weight: bold;
+    color: white;
+    background-color: aqua;
+}
+caption {
+    padding-bottom: 20px;
+    font-size: 20px;
+}

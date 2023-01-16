@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>자기소개</title>
+        <!--외부 스타일 적용-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!--내부 스타일 적용-->
+        <style>
+            .survey {
+                display: flex;
+                justify-content: center;
+            }
+            #survey {
+                padding: 10px;
+                margin: 10px;
+                width: 800px;
+                height: auto;
+            }
+            .box1 h2 {
+                font-size: 2em;
+                line-height: 0.9em;
+                background-color: lightpink;
+                padding: 20px;
+                border-radius: 20px;
+                box-shadow: 3px 3px 3px black;
+            }
+            .box2 {
+                height: auto;
+                background-color: lightgray;
+                border-radius: 20px;
+                padding: 5px;
+            }
+            fieldset {
+                margin: 15px;
+                border-color: white;
+                border-radius: 20px;
+                box-shadow: 3px 3px 3px black;
+               
+            }
+            legend {
+                font-weight: bold;
+                color: purple;
+            }
+            ul {
+                list-style: none;
+                margin: 0px;
+                padding: 10px;
+            }
+            li {
+                margin: 20px;
+                background-color: aliceblue;
+                width: 300px;
+                height: 50px;
+                border-radius: 20px;
+                padding: 10px;
+            }
+            li label {
+                margin: 10px;
+                width: 80px;
+                float: left;
+                font-size: 1.2em;
+            }
+            label img {
+                width: 10%;
+                margin: 10px 40px 10px 20px;
+                padding: 5px;
+                background-color: white;
+            }
+            #user_name, #user_password {
+                margin: 10px;
+            }
+            #btn {
+                text-align: center;
+            }
+            input[type="submit"], input[type="reset"] {
+                border: none;
+                border-radius: 20px;
+                padding: 10px;
+                background-color: orange;
+                color: white;
+                font-weight: bold;
+                font-family: "D2Coding";
+                width: 200px;
+                height: 50px;
+                box-shadow: 3px 3px 3px black;
+            }
+            section {
+                border-bottom: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!--시멘틱 태그 작성.-->
+        <!--제목 영역-->
+        <header>
+            <!--사진 영역-->
+            <div>
+                <img src="img/img.jpeg" width="100" id="img">
+            </div>    
+            <div>
+                <h1>KANG BYEONG MIN</h1>
+                <p>강병민</p>
+            </div>    
+        </header>
+
+        <!--메뉴 영역 - 네비게이션 영역-->
+        <nav>
+            <a href="index.html">[개인정보]</a>&nbsp;&nbsp;
+            <a href="index.html#s2">[학력사항]</a>&nbsp;&nbsp;
+            <a href="index.html#s3">[자격사항]</a>&nbsp;&nbsp;
+            <a href="index.html#s4">[자기소개]</a>&nbsp;&nbsp;
+            <a href="survey.html">[설문조사]</a>
+        </nav>
+       
+        <!--설문 영역-->
+        <div class="survey">
+            <section id="survey">
+            <form name="myForm" method="get" active="">
+                <!--제목 영역-->
+                <div class="box1">
+                    <h2>당신이 좋아하는 과일을 선택해 보세요.</h2>
+                </div>
+                <!--설문 입력 영역-->
+                <div class="box2">
+                    <!--개인정보-->
+                    <fieldset>
+                        <legend>개인 정보</legend>
+                        <ul>
+                            <li>
+                                <label for="user_name">성명</label>
+                                <input type="text" name="user_name" id="user_name" placeholder="이름을 입력하세요.">
+                            </li>
+                            <li>
+                                <label for="user_pw">비밀번호</label>
+                                <input type="password" name="user_password" id="user_password" placeholder="비밀번호를 입력하세요.">
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <!--과일 선택-->
+                    <fieldset>
+                        <legend>좋아하는 과일을 선택하세요.</legend>
+                        <label>
+                            <input type="radio" name="fruit" id="fruit1" value="딸기">
+                            <img src="img/img1.png">
+                        </label>
+                        <label>
+                            <input type="radio" name="fruit" id="fruit2" value="바나나">
+                            <img src="img/img2.png">
+                        </label>
+                        <label>
+                            <input type="radio" name="fruit" id="fruit3" value="사과">
+                            <img src="img/img3.png">
+                        </label>
+                        <label>
+                            <input type="radio" name="fruit" id="fruit4" value="수박">
+                            <img src="img/img4.png">
+                        </label>
+                    </fieldset>
+                    <br>
+
+                    <div id="btn">
+                        <input type="submit" value="결과 보기">
+                        <input type="reset" value="취소">
+                    </div>
+                </div>
+            </form>
+        </section>
+        </div>
+        
+
+        <!--꼬리말 영역-->
+        <footer>
+            <p>&copy; KANG BYEONG MIN</p>
+        </footer>
+
+        
+    </body>
+</html>
