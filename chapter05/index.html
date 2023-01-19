@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>자기소개</title>
+        <!--외부 스타일 적용-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!--시멘틱 태그 작성.-->
+        <!--제목 영역-->
+        <header id="h">
+            <!--사진 영역-->
+            <div>
+                <img src="img/img.jpeg" width="100" id="img">
+            </div>    
+            <div>
+                <h1>KANG BYEONG MIN</h1>
+                <p>강병민</p>
+            </div>    
+        </header>
+
+        <!--메뉴 영역 - 네비게이션 영역-->
+        <nav>
+            <a href="#s1">[개인정보]</a>&nbsp;&nbsp;
+            <a href="#s2">[학력사항]</a>&nbsp;&nbsp;
+            <a href="#s3">[자격사항]</a>&nbsp;&nbsp;
+            <a href="#s4">[자기소개]</a>&nbsp;&nbsp;
+            <a href="survey.html">[설문조사]</a>
+        </nav>
+       
+        <!--개인정보 내용 영역-->
+        <section id="s1">
+            <!--세부 내용 영역-->
+            <div>
+                <h1 class="c1">개인정보</h1>
+                <ol>
+                    <li><span class="material-icons">
+                        account_circle
+                        </span>강병민</li>
+                    <li><span class="material-icons">
+                        stay_primary_portrait
+                        </span>010-6388-3651</li>
+                    <li><span class="material-icons">
+                        markunread
+                        </span>bm20050@gmail.com</li>
+                    <li><span class="material-icons">
+                        home
+                        </span>부산 금정구 수림로91번길 58</li>
+                </ol>
+            </div>
+        </section>
+
+        <!--학력사항 내용 영역-->
+        <section id="s2">
+            <div>
+                <h1 class="c2">학력사항</h1>
+                <!-- <ul>
+                    <li>2016~2022 부산대학교 정보컴퓨터공학부 졸업</li>
+                    <li>2013~2016 합천고등학교 졸업</li>
+                    <li>해인중학교 졸업</li>
+                    <li>숭산초등학교 졸업</li>
+                </ul> -->
+                <table>
+                    <caption>학력사항</caption>
+                    <thead>
+                        <tr>
+                            <td>출신학교</td>
+                            <td>전공</td>
+                            <td>기간</td>
+                            <td>구분</td>   
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>부산대학교</td>
+                            <td>정보컴퓨터공학부</td>
+                            <td>2016 ~ 2022</td>
+                            <td rowspan="4">졸업</td>
+                        </tr>
+                        <tr>
+                            <td>합천고등학교</td>
+                            <td>이과</td>
+                            <td>2013 ~ 2016</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>해인중학교</td>
+                            <td></td>
+                            <td></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>숭산초등학교</td>
+                            <td></td>
+                            <td></td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+        </section>
+        
+        <!--자격사항 내용 영역-->
+        <section id="s3">
+            <div>
+                <h1 class="c3">자격사항</h1>
+                <ul>
+                    <li>정보처리기사</li>
+                    <li>SQLD</li>
+                    <li>한국사능력검정시험</li>
+                </ul>
+            </div>
+        </section>
+
+        <!--자기소개 내용 영역-->
+        <section id="s4">
+            <div>
+                <h1 class="c4">자기소개</h1>
+                <p id="p">
+                    저는 강병민입니다.
+                    <br>이번 교육과정을 통해 AI, 빅데이터, 풀스택 웹개발을 공부하고 싶습니다.
+                    <br>오늘은 월요일입니다.
+                </p>    
+            </div>
+        </section>
+
+        <!--꼬리말 영역-->
+        <footer>
+            <p>&copy; KANG BYEONG MIN</p>
+            <br><p><a href="#h">위로가기</a></p>
+        </footer>
+
+        
+    </body>
+</html>
