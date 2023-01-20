@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>4장 DOM 가상 클래스와 Display 실습 : 본인 이름</title>
+		
+		<style>
+			/* 가상 클래스 선택자 */
+			
+			/* link, visited 같이 설정 
+				hover, active 같이 설정*/
+			a:link {
+				color: green;
+				text-decoration: none;
+			}
+			a:hover {
+				color: red;
+				background-color: pink;
+				text-decoration: underline;
+			}
+			a:active {
+				background-color: purple;
+			}
+			a:visited {
+				color: gray;
+			}
+			/* display 속성 */
+			a {
+				background-color: red;
+				/* display: block; 한줄 전체 차지 = 가로 세로 길이 설정 가능 */
+				/* width: 100px;
+				height: 40px; */
+				/* display: inline; 가로 세로 길이 설정 불가능 */
+				/* 인라인과 블록의 중간 형태. 줄바꿈 안되고 가롷세로 길이 설정 가능 */
+				display: inline-block;
+				width: 100px;
+				height: 30px;
+				text-align: center;
+				padding: 20px;
+				
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<h1>DOM 실습</h1>
+		</header>
+		
+		<nav>
+			<a href="#">[Header]</a>&nbsp;&nbsp;
+			<a href="#">[Nav]</a>&nbsp;&nbsp;
+			<a href="#">[Section]</a>&nbsp;&nbsp;
+			<a href="#">[Article]</a>&nbsp;&nbsp;
+			<a href="#">[Aside]</a>&nbsp;&nbsp;
+			<a href="#">[Footer]</a>
+		</nav>
+		
+		<section id="s1">
+			<h2>DOM (문서 객체 모델; Document Object Model)</h2>
+			<article>
+				<p>문서의 <span>구조화된 표현</span>을 제공하며 웹 페이지의 객체 지향 표현</p>
+				<p>구조화된 문서는 DOM을 사용하여 <span>트리 구조</span>를 얻어낼 수 있음</p>
+			</article>			
+		</section>
+		
+		<section id="s2">
+			<h2>Header</h2>
+			<article>
+				<ul>
+					<li>페이지나 섹션의 머리말 표현</li>
+					<ol>
+						<li>페이지 제목</li>
+						<li>페이지 소개</li>
+					</ol>
+				</ul>
+			</article>
+		</section>
+		
+		<section id="s3">
+			<h2>Nav</h2>
+			<article>
+				<ol>
+					<li>하이퍼링크들을 모아 놓은 <span>특별한 섹션</span></li>
+					<li>페이지 내 목차를 만드는 용도</li>
+				</ol>
+			</article>
+		</section>
+		
+		<footer>
+			<p>학과 학번 이름</p>
+		</footer>
+	</body>
+</html>
